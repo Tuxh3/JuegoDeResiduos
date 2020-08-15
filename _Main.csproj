@@ -44,9 +44,15 @@
      <Compile Include="Assets\_Main\SampleScenes\Scripts\ParticleSceneControls.cs" />
      <Compile Include="Assets\_Main\SampleScenes\Scripts\PlaceTargetWithMouse.cs" />
      <Compile Include="Assets\_Main\SampleScenes\Scripts\SlowMoButton.cs" />
+     <Compile Include="Assets\_Main\Scripts\LevelControlScript.cs" />
+     <Compile Include="Assets\_Main\Scripts\MainMenuScript.cs" />
      <Compile Include="Assets\_Main\Scripts\MovimientoCamaraJugador.cs" />
+     <Compile Include="Assets\_Main\Scripts\PasarClasificaion.cs" />
+     <Compile Include="Assets\_Main\Scripts\QuitarPuntos.cs" />
      <Compile Include="Assets\_Main\Scripts\RecogerResiduos.cs" />
      <Compile Include="Assets\_Main\Scripts\RecolectarObjetos.cs" />
+     <Compile Include="Assets\_Main\Scripts\Vida.cs" />
+     <Compile Include="Assets\_Main\Scripts\WinSceneScript.cs" />
      <Compile Include="Assets\_Main\Standard Assets\2D\Scripts\Camera2DFollow.cs" />
      <Compile Include="Assets\_Main\Standard Assets\2D\Scripts\CameraFollow.cs" />
      <Compile Include="Assets\_Main\Standard Assets\2D\Scripts\Platformer2DUserControl.cs" />

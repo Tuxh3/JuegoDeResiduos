@@ -5,6 +5,9 @@ TagManager:
   serializedVersion: 2
   tags:
   - recoger
+  - Vida
+  - ToDisable
+  - ToEnable
   layers:
   - Default
   - TransparentFX
