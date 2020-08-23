@@ -71,7 +71,7 @@ public class LevelControlScript : MonoBehaviour {
 		int cont =1;
 		if (cont == 1)
 		{
-			Texto.text = "Recuerda que los residuos como cáscara de bánano son clasificados como residuos no aprovechables y van en la caneca de color azul.";
+			Texto.text = "Recuerda que los residuos como plástico, cartón, vidrio se ubican en la caneca de aprovechables; los restos de comida en la caneca de orgánicos y por último el papel, servilletas, cartón contaminado en la caneca no aprovechables";
 		}
 		
 		
