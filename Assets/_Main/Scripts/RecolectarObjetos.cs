@@ -19,7 +19,7 @@ public class RecolectarObjetos : MonoBehaviour
     void Start()
     {
         ObjetosActuales = 0;
-        TotalObjetos = 3;
+        TotalObjetos = 7;
        //boton.gameObject.SetActive(false);
     }
 

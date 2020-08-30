@@ -1,6 +1,8 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 
 public class QuitarPuntos : MonoBehaviour
 {
@@ -24,9 +26,9 @@ public class QuitarPuntos : MonoBehaviour
         
     }
 
-    private void OnTriggerEnter(Collider otro)
+    private void OnTriggerStay(Collider otro)
     {
-        if (otro.CompareTag ("recoger"))
+        if (otro.tag == "recoger")
         {
             playerVida.TakeDaño(dañoResiduo);
         }
