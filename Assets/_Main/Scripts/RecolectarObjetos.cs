@@ -48,7 +48,7 @@ public class RecolectarObjetos : MonoBehaviour
           ObjetosActuales += 1;
        //cont = cont + 1;
        //print(cont);
-       Destroy(otro.gameObject);
+          Destroy(otro.gameObject);
 
        }
    }

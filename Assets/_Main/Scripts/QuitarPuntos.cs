@@ -13,8 +13,9 @@ public class QuitarPuntos : MonoBehaviour
 
      private void Awake()
     {
-        Player = GameObject.FindWithTag("recoger");
+        Player = GameObject.FindWithTag("Player");
         playerVida = Player.GetComponent<Vida>();
+        Debug.Log(Player);
     }
     void Start()
     {
@@ -26,9 +27,10 @@ public class QuitarPuntos : MonoBehaviour
         
     }
 
-    private void OnTriggerStay(Collider otro)
+    private void OnTriggerStay(Collider otro)   
     {
-        if (otro.tag == "recoger")
+        Debug.Log(playerVida);
+        if (otro.tag == "Player")
         {
             playerVida.TakeDaño(dañoResiduo);
         }
