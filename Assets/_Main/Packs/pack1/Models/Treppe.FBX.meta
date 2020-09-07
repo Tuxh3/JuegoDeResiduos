@@ -1,0 +1,82 @@
+fileFormatVersion: 2
+guid: 59d15dff8a588e649935a94b6f7182af
+ModelImporter:
+  serializedVersion: 16
+  fileIDToRecycleName:
+    100000: Stair1
+    100002: Stair2
+    100004: Stair3
+    100006: Stair4
+    100008: //RootNode
+    400000: Stair1
+    400002: Stair2
+    400004: Stair3
+    400006: Stair4
+    400008: //RootNode
+    2300000: Stair1
+    2300002: Stair2
+    2300004: Stair3
+    2300006: Stair4
+    3300000: Stair1
+    3300002: Stair2
+    3300004: Stair3
+    3300006: Stair4
+    4300000: Stair3
+    4300002: Stair4
+    4300004: Stair2
+    4300006: Stair1
+    11100000: //RootNode
+  materials:
+    importMaterials: 1
+    materialName: 0
+    materialSearch: 1
+  animations:
+    legacyGenerateAnimations: 4
+    bakeSimulation: 0
+    optimizeGameObjects: 0
+    motionNodeName: 
+    animationCompression: 1
+    animationRotationError: .5
+    animationPositionError: .5
+    animationScaleError: .5
+    animationWrapMode: 0
+    extraExposedTransformPaths: []
+    clipAnimations: []
+    isReadable: 1
+  meshes:
+    lODScreenPercentages: []
+    globalScale: .0199999996
+    meshCompression: 0
+    addColliders: 0
+    importBlendShapes: 1
+    swapUVChannels: 0
+    generateSecondaryUV: 0
+    useFileUnits: 1
+    optimizeMeshForGPU: 1
+    weldVertices: 1
+    secondaryUVAngleDistortion: 8
+    secondaryUVAreaDistortion: 15.000001
+    secondaryUVHardAngle: 88
+    secondaryUVPackMargin: 4
+  tangentSpace:
+    normalSmoothAngle: 60
+    splitTangentsAcrossUV: 1
+    normalImportMode: 0
+    tangentImportMode: 1
+  importAnimation: 1
+  copyAvatar: 0
+  humanDescription:
+    human: []
+    skeleton: []
+    armTwist: .5
+    foreArmTwist: .5
+    upperLegTwist: .5
+    legTwist: .5
+    armStretch: .0500000007
+    legStretch: .0500000007
+    feetSpacing: 0
+    rootMotionBoneName: 
+  lastHumanDescriptionAvatarSource: {instanceID: 0}
+  animationType: 1
+  additionalBone: 0
+  userData: 
