@@ -13,6 +13,10 @@ public class RecolectarObjetos : MonoBehaviour
     public Text Texto2;
     public Text Texto3;
     public Button boton;
+
+    public AudioSource recogersound;
+
+    public GameObject SonidoRecoger;  
     
 
     // Start is called before the first frame update
@@ -45,6 +49,7 @@ public class RecolectarObjetos : MonoBehaviour
      void OnTriggerStay(Collider otro){
       //if (otro.tag == "recoger" && Input.GetKey("q")){
       if (otro.tag == "recoger"){
+          Instantiate(SonidoRecoger);
           ObjetosActuales += 1;
        //cont = cont + 1;
        //print(cont);
