@@ -5,6 +5,7 @@ using UnityEngine.UI;
 
 public class Vida : MonoBehaviour
 {
+    
     public int vidaInicial = 10;
     public int vidaActual;
     public Slider barraSlider;
@@ -21,13 +22,14 @@ public class Vida : MonoBehaviour
 
     
 
-    // Update is called once per frame
+    // Se actualiza el puntaje del jugador y la cantidad de residuos que va recolectando
     public void TakeDaño(int valorDaño)
     {
         vidaActual += valorDaño;
         barraSlider.value = vidaActual;
         print(barraSlider.value);
 
+        // Se elimina el residuo que se recolecta
         if (vidaActual < 0)
         {
             Destroy(gameObject);

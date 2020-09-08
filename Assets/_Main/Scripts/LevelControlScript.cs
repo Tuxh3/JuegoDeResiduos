@@ -6,33 +6,28 @@ using UnityEngine.UI;
 
 public class LevelControlScript : MonoBehaviour {
 
-	// Get references to game objects that should be disabled and enabled
-	// at the start
+	// Se obtienen los objetos que tienen las referencias de toEnable y toDisable 
 	GameObject[] toEnable, toDisable;
 	public Text Texto;
 
-	// References to game objects that should be enabled
-	// when correct or incorrect answer is given
+	// Objetos que hacen referencia a las preguntas, para saber cuál es la respuesta correcta y cual la incorrecta
+	// a la hora de calsificar los residuos 
 	public GameObject correctSign, incorrectSign;
 
-	// Variable to contain current scene build index
+	// Escena actual
 	int currentSceneIndex;
-
-	// Variable name to pass to Player Prefs meaning which variable to set as got
-	// Adjustable in inspector depending on current scene and trophy
-	// you earn (if you do)
 	
-	// Use this for initialization
+	// Inicialización
 	void Start () {
 
-		// Getting current scene build index
+		// Inicialización de la escena
 		currentSceneIndex = SceneManager.GetActiveScene ().buildIndex;
 
-		// Finding game objects with tags "ToEnable" and "ToDisable"
+		// Se seleccionan los objetos con el tag toEnable y toDisable 
 		toEnable = GameObject.FindGameObjectsWithTag ("ToEnable");
 		toDisable = GameObject.FindGameObjectsWithTag ("ToDisable");
 
-		// Disabling game objects with tag "ToEnable"
+		// Desabilita los elementos que tienen el tag toEnable
 		foreach (GameObject element in toEnable)
 		{
 			element.gameObject.SetActive (false);
@@ -40,16 +35,17 @@ public class LevelControlScript : MonoBehaviour {
 
 	}
 
-	// Method is invoked when correct answer is given
+	// Este método se invoca cuando la respuesta es correcta, si la respuesta es correcta se sigue a la siguiente pregunta con 
+	// el residuo siguiente
 	public void RightAnswer()
 	{
-		// Disabling game objects that are no longer needed
+		
 		foreach (GameObject element in toDisable)
 		{
 			element.gameObject.SetActive (false);
 		}
 
-		// Turn on "correct" sign
+		
 		correctSign.gameObject.SetActive (true);
 		Invoke ("LoadNextLevel", 1f);
 
@@ -57,16 +53,16 @@ public class LevelControlScript : MonoBehaviour {
 		
 	}
 
-	// Method is invoked if incorrect answer is given
+	// Este método se invoca cuando la respuesta es incorrecta, si la respuesta está errada se le da una retroalimentación
+	// al jugar y vuelve a iniciar la clasificación
 	public void WrongAnswer()
 	{
-		// Disabling game objects that are no longer needed
+		// Desabilita los objetos que no se necesitan
 		foreach (GameObject element in toDisable)
 		{
 			element.gameObject.SetActive (false);
 		}
 
-		// Turn on "incorrect" sign
 		incorrectSign.SetActive (true);
 		int cont =1;
 		if (cont == 1)
@@ -76,19 +72,17 @@ public class LevelControlScript : MonoBehaviour {
 		
 		
 
-		// Invoke GotoMainMenu method in 7 second
-		Invoke ("GotoMainMenu", 7f);
+		// Retorna al inicio después de 12 segundos
+		Invoke ("GotoMainMenu", 12f);
 	}
 
-
-
-	// Method loads next level depending on current scenes build index
+	// Carga el siguiente nivel o escena
 	void LoadNextLevel()
 	{
 		SceneManager.LoadScene (currentSceneIndex + 1);
 	}
 
-	// Method loads MainMenu scene
+	// Carga la escena principal del cuestionario para la clasificación de los residuos
 	void GotoMainMenu()
 	{
 		SceneManager.LoadScene ("Clasificacion");

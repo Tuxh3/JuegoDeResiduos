@@ -1,5 +1,5 @@
 sceneSetups:
-- path: Assets/_Main/Scenes/Parque/Parque.unity
+- path: Assets/_Main/Scenes/Campus/Campus.unity
   isLoaded: 1
   isActive: 1
   isSubScene: 0
